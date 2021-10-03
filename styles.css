@@ -1,0 +1,38 @@
+body {
+    background-color: #F5E1FD;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.heading {
+    font-size: 42px;
+}
+
+.tasks-pending {
+    background-color: #B399D4;
+}
+
+.tasks-completed {
+    background-color: #CE9DD9;
+}
+
+.task-list li {
+    background-color: #F5E1FD;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+.task-list li i:first-of-type {
+    font-size: 22px;
+}
+
+.task-list li i:last-of-type {
+    font-size: 26px;
+}
+
+.task-details {
+    font-size: 22px;
+}
