@@ -11,6 +11,21 @@ ul {
     font-size: 42px;
 }
 
+.task-input:focus {
+    border-color: #CE9DD9;
+    box-shadow: 0 0 0 0.15rem #CE9DD9;
+}
+
+.add-button {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.add-button.active {
+    opacity: 0.9;
+    pointer-events: auto;
+}
+
 .tasks-pending {
     background-color: #B399D4;
 }
@@ -35,4 +50,8 @@ ul {
 
 .task-details {
     font-size: 22px;
+}
+
+.completed {
+    text-decoration: line-through;
 }

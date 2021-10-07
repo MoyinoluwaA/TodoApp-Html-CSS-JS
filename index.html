@@ -15,10 +15,10 @@
         <h1 class='mb-5 heading fw-bold'>My Tasks</h1>
         <div class="row mx-4 mx-sm-0">
             <div class="offset-sm-1 col-sm-7 offset-md-2 col-md-7">
-                <input type='text' class="form-control form-control-lg" name='new-task' />
+                <input type='text' class="task-input form-control form-control-lg" name='new-task' placeholder='Add a new todo'/>
             </div>
             <div class="col-sm-4 col-md-3 mt-3 mt-sm-0 text-sm-start">
-                <button type='button' class='btn btn-outline-dark btn-lg'>
+                <button type='button' class='btn btn-outline-dark btn-lg add-button'>
                     <i class="bi bi-plus-lg"></i>
                     Add Task 
                 </button>
@@ -29,63 +29,29 @@
         <section class='tasks-pending py-5'>
             <div class="offset-md-2 col-md-8 offset-lg-3 col-lg-6 mx-3 mx-sm-5 mx-md-auto">
                 <h2 class="mb-5">Pending Tasks</h2>
-                <ul class="task-list">
-                    <li class='px-3 px-md-5 py-3 mb-4 d-flex justify-content-between align-items-center'>
-                        <div class="d-flex">
-                            <i class="bi bi-square me-4"></i>
-                            Write weekly progress report
-                        </div>
-                        <i class="bi bi-trash-fill"></i>
-                    </li>
-                    <li class='px-3 px-md-5 py-3 mb-4 d-flex justify-content-between align-items-center'>
-                        <div class="d-flex">
-                            <i class="bi bi-square me-4"></i>
-                            Implement javascript in todo app
-                        </div>
-                        <i class="bi bi-trash-fill"></i>
-                    </li>
-                    <li class='px-3 px-md-5 py-3 mb-4 d-flex justify-content-between align-items-center'>
-                        <div class="d-flex">
-                            <i class="bi bi-square me-4"></i>
-                            Read article
-                        </div>
-                        <i class="bi bi-trash-fill"></i>
-                    </li>
+                <ul class="task-list task-list-pending">
                 </ul>
                 <div class="d-flex justify-content-between align-items-center mt-5">
-                    <p class="mb-0 task-details text-danger">3 Pending Tasks</p>
-                    <button class="btn btn-light">Clear Pending Tasks</button>
+                    <p class="mb-0 task-details text-danger"><span class='pending-tasks'></span> Pending Tasks</p>
+                    <button class="btn btn-light clear-pending">Clear Pending Tasks</button>
                 </div>
             </div>
         </section>
         <section class="tasks-completed py-5">
             <div class="offset-md-2 col-md-8 offset-lg-3 col-lg-6 mx-3 mx-sm-5 mx-md-auto">
                 <h2 class="mb-5">Completed Tasks</h2>
-                <ul class="task-list">
-                    <li class='px-3 px-md-5 py-3 mb-4 d-flex justify-content-between align-items-center'>
-                        <div class="d-flex">
-                            <i class="bi bi-check2-square me-4"></i>
-                            Made static todo app
-                        </div>
-                        <i class="bi bi-trash-fill"></i>
-                    </li>
-                    <li class='px-3 px-md-5 py-3 mb-4 d-flex justify-content-between align-items-center'>
-                        <div class="d-flex">
-                            <i class="bi bi-check2-square me-4"></i>
-                            Wrote technical article
-                        </div>
-                        <i class="bi bi-trash-fill"></i>
-                    </li>
+                <ul class="task-list task-list-completed">
                 </ul>
                 <div class="d-flex justify-content-between align-items-center mt-5">
-                    <p class="mb-0 task-details text-success">2 Tasks Completed</p>
-                    <button class="btn btn-light">Clear Completed Tasks</button>
+                    <p class="mb-0 task-details text-success"><span class='completed-tasks'></span> Tasks Completed</p>
+                    <button class="btn btn-light clear-completed">Clear Completed Tasks</button>
                 </div>
             </div>
         </section>
         <div class="my-5 text-center">
-            <button class='btn btn-lg btn-outline-primary'>Clear All Tasks</button>
+            <button class='btn btn-lg btn-outline-primary clear-all'>Clear All Tasks</button>
         </div>
     </main>
+    <script src='script.js'></script>
 </body>
 </html>
