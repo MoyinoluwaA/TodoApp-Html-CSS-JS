@@ -117,6 +117,8 @@ function addTodo(e) {
 
     // change input value back to empty string
     input.value = '';
+    addButton.classList.remove('active')
+    addButton.blur()
 }
 
 function deleteCheck(e) {
